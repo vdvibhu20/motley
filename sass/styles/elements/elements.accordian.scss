@@ -1,5 +1,5 @@
 .accordian-ul{
-    @include border(solid, 1px, $default-border);
+    @include border(solid, 1px, $search-box-color);
     @include margin(0px, 0px, 20px, 0px);
 }
 
@@ -16,7 +16,7 @@
 .accordian-li{
     @include padding-mixin(10px, 61px, 10px, 34px);
     justify-content: space-between;
-    border-bottom: solid 2px $default-border;
+    border-bottom: solid 2px $search-box-color;
     min-height: 79px;
     background-color: $accordian-li;
     cursor: pointer;
@@ -48,6 +48,7 @@
 }
 
 .accordian-li-duration{
+    @include dimensions(80px, auto);
     text-align: right;
     color: $default-accordian-font;
 }
