@@ -9,13 +9,13 @@
 
 .main-h{
   @include margin(0, 0, 8px, 0);
-  font-size:28.8px;
+  font-size: $font-md;
   @extend %bold;
   color: $global-font-text-color;
 }
 
 .sub-h{
-  font-size: 23.3px;
+  font-size: $font-sm;
   @extend %bold;
   color: $font-sub-heading;
 }
@@ -23,11 +23,10 @@
 
 //Heading with Underline
 .heading-u{
-  @include padding-mixin(0, 60px, 40px, 0);
-  @include margin(0, 0, 49px, 0);
+  @include padding-mixin(0, 60px, 22px, 0);
   border-bottom: solid 1px $global-font-text-color;
   color: $global-font-text-color;
-  font-size: $font-lg;
+  font-size: $font-md;
   @extend %bold;
   display: inline-block;
 }
